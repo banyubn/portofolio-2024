@@ -1,0 +1,27 @@
+body {
+    background-color: #151515;
+    color: white;
+
+    animation: moveIn 0.7s;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.overview-img {
+    width: 100%;
+}
+
+@keyframes moveIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

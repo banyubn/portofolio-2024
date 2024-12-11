@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* poppins-font */
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    scroll-padding: 50px;
+}
+
+header {
+    width: 100%;
+    height: 100dvh;
+    position: relative;
+    overflow: hidden;
+    background-image: url(assets/);
+    background-repeat: repeat;
+}
+
+header:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+    z-index: 25;
+}
+
+.desert-1 {
+    position: absolute;
+    width: auto;
+    height: max-content;
+    right: 0;
+    z-index: 19;
+    filter: blur(1.5px);
+
+    animation: moveIn 0.7s;
+}
+
+.desert-2 {
+    position: absolute;
+    width: auto;
+    height: max-content;
+    right: 0;
+    z-index: 18;
+    filter: blur(0.85px);
+
+    animation: moveIn 0.88s;
+}
+
+.desert-3 {
+    position: absolute;
+    width: auto;
+    height: max-content;
+    right: 0;
+    z-index: 17;
+
+    animation: moveIn 0.67s;
+}
+
+.desert-4 {
+    position: absolute;
+    width: auto;
+    height: max-content;
+    right: 0;
+    z-index: 16;
+
+    animation: moveIn 0.4s;
+}
+
+.desert-5 {
+    position: absolute;
+    width: auto;
+    height: max-content;
+    right: 0;
+    z-index: 15;
+}
+
+.sky {
+    position: absolute;
+    width: auto;
+    height: max-content;
+    right: 0;
+    z-index: 10;
+}
+
+.stars {
+    position: absolute;
+    width: auto;
+    height: max-content;
+    right: 0;
+    z-index: 13;
+}
+
+.sun {
+    position: absolute;
+    width: auto;
+    height: max-content;
+    right: 0;
+    z-index: 12;
+}
+
+.translate {
+    transition: 0.088s;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    z-index: 30;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), transparent);
+}
+
+.logo {
+    color: #FFF;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+
+.big-title {
+    position: absolute;
+    z-index: 30;
+    line-height: 1rem;
+    top: calc(50% - 2rem);
+    width: 100%;
+    text-align: center;
+    font-size: 6rem;
+    color: #FFF;
+    z-index: 18;
+}
+
+.big-subtitle {
+    position: absolute;
+    z-index: 30;
+    line-height: 11rem;
+    top: calc(50% - 2rem);
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: #FFF;
+    letter-spacing: 6px;
+    z-index: 18;
+}
+
+section {
+    width: 100%;
+    height: auto;
+    background-color: #151515;
+    position: relative;
+}
+
+.border {
+    width: 5.5rem;
+    height: 3px;
+    background-color: #FFF;
+}
+
+.text {
+    line-height: 2rem;
+}
+
+.about {
+    margin: 0;
+    padding: 150px 0 310px 0;
+}
+
+.shadow-transition {
+    position: absolute;
+    bottom: 100%;
+    height: 300px;
+    width: 100%;
+    left: 0;
+    z-index: 20;
+    background: linear-gradient(to top, #151515, transparent);
+}
+
+.opacity {
+    opacity: 0;
+}
+
+.project-icon {
+    font-size: 3.5rem;
+}
+
+.card-styling {
+    background-color: white;
+    color:#151515;
+    border-radius: 1rem;
+    width: 100%;
+    height: 200px;
+    transition: 0.2s ease-in-out;
+}
+
+.card-styling:hover {
+    color: rgb(255, 170, 0);
+    border: solid 4px #FFF;
+    transform: scale(97.5%);
+}
+
+@keyframes moveIn {
+    from {
+        transform: translateY(250px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 767px) {
+    .big-title {
+        font-size: 5rem;
+    }
+
+    .big-subtitle {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .big-title {
+        font-size: 3.9rem;
+    }
+
+    .big-subtitle {
+        font-size: 1.1rem;
+        line-height: 7rem;
+    }
+}
+
+@media (max-width: 410px) {
+    .big-title {
+        font-size: 3.4rem;
+    }
+
+    .big-subtitle {
+        font-size: 1rem;
+        line-height: 6.5rem;
+        letter-spacing: 5px;
+    }
+}
+
+@media (max-width: 385px) {
+    .big-title {
+        font-size: 3rem;
+        line-height: 1rem;
+    }
+
+    .big-subtitle {
+        font-size: 0.7rem;
+        line-height: 5.5rem;
+        letter-spacing: 5px;
+    }
+}
+
+@media (max-width: 320px) {
+    .big-title {
+        font-size: 2.4rem;
+        line-height: 1rem;
+    }
+
+    .big-subtitle {
+        font-size: 0.6rem;
+        line-height: 5rem;
+        letter-spacing: 4px;
+    }
+}

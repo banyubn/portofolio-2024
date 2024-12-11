@@ -1,0 +1,121 @@
+body {
+    background-color: #151515;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#start {
+    position: fixed;
+    background: rgb(47, 47, 47);
+    background: linear-gradient(180deg, rgb(29, 29, 29) 0%, rgb(41, 41, 41) 42%);
+    color: white;
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    z-index: 30;
+
+}
+
+.start-anim {
+    animation: screenMoveIn 1.75s cubic-bezier(0.470, 0.010, 0.430, 1.000);
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+.start-title {
+    font-size: 80px;
+    font-family: "DM Serif Display", serif !important;
+    font-weight: 400;
+    font-style: italic;
+
+    animation: titleMoveIn 0.75s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+
+    z-index: 30;
+}
+
+
+
+.card-img-top {
+    width: auto;
+    height: 180px;
+}
+
+.card-title {
+    font-size: 1rem;
+}
+
+.card-text {
+    font-size: 0.8rem;
+}
+
+.outer-tilt {
+    transform-style: preserve-3d;
+    transform: perspective(700px);
+}
+
+.card {
+    border: solid 10px #343a40;
+}
+
+.card:hover > .inner-tilt {
+    transform: translateZ(35px);
+}
+
+@keyframes titleMoveIn {
+    0% {
+        filter: blur(2px);
+        opacity: 0;
+        letter-spacing: 30px;
+        transform: translateY(100px);
+    }
+
+    100% {
+        filter: blur(0);
+        opacity: 1;
+        letter-spacing: 0;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes screenMoveIn {
+    0% {
+        transform: translateY(0);
+
+
+    }
+
+    50% {
+        transform: translateY(0);
+        filter: blur(0);
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-101%);
+        filter: blur(2px);
+        border-radius: 0 0 100% 100%;
+    }
+}
+
+.rounded-edge { 
+    border-radius: 30px;
+    border: 1px solid #000;
+    box-shadow: 0 0 4px #000;
+}
+
+@media screen and (max-width: 567px) {
+    .start-title {
+        font-size: 40px;
+    }
+    
+}

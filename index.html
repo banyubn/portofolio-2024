@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/8792/8792047.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font/kanit.css">
+    <link rel="stylesheet" href="font/dm-sans.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container d-flex justify-content-between">
+                <h3 class="logo kanit-thin-italic fs-4">SIR<span class="kanit-semibold">ANYU</span></h3>
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item active" href="#bio">Biograph</a></li>
+                        <li><a class="dropdown-item" href="#about">About Me</a></li>
+                        <li><a class="dropdown-item" href="#projects">My Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <h1 class="big-title dm-sans-bold translate" data-speed="0.17">Portofolio of</h1>
+        <h6 class="big-subtitle dm-sans-regular translate" data-speed="0.17">Banyu Bagastara Nugroho</h6>
+
+        <img src="assets/bg/desert-1.png" class="desert-1 translate blur" data-speed="-0.14" id="desert-1">
+        <img src="assets/bg/desert-2.png" class="desert-2 translate" data-speed="0.15" id="desert-2">
+        <img src="assets/bg/desert-3.png" class="desert-3 translate" data-speed="0.08" id="desert-3">
+        <img src="assets/bg/desert-4.png" class="desert-4 translate" data-speed="-0.2" id="desert-4">
+        <img src="assets/bg/desert-5.png" class="desert-5 translate" data-speed="-0.26" id="desert-5">
+        <img src="assets/bg/sky.png" class="sky translate" data-speed="0.01" id="sky">
+        <img src="assets/bg/stars.png" class="stars translate" data-speed="0.085" id="stars">
+        <img src="assets/bg/sun.png" class="sun translate" data-speed="0.45" id="sun">
+    </header>
+
+    <section>
+        <div class="shadow-transition"></div>
+
+        <div class="container">
+            <div class="row gx-5 text-white about align-items-center translate" data-speed="0.05" id="about">
+                <div class="col-md-8 content opacity">
+                    <h3 class="title dm-sans-bold">About Me</h3>
+                    <div class="border mb-3"></div>
+                    <p class="text dm-sans-medium mb-5">Hi, I’m <span class="fw-bold">Banyu Bagastara Nugroho</span>! I’m a web developer who loves creating websites that look great and work smoothly. Whether it’s designing a clean interface or building the backend to support it, I enjoy solving problems and bringing ideas to life. I’m always learning and experimenting with new tools to improve my skills and stay up-to-date.
+                </div>
+                <div class="col-md-4 img-container opacity">
+                    <img class="img-fluid rounded" src="assets/photos/zee.jpeg" alt="">
+                </div>
+            </div>
+            <!-- <div class="row gx-5 text-white about py-5 align-items-center flex-row-reverse translate"
+                data-speed="-0.08" style="margin-bottom: 10em;" id="about">
+                <div class="col-md-8 content opacity">
+                    <h3 class="title dm-sans-bold">About</h3>
+                    <div class="border mb-3"></div>
+                    <p class="text dm-sans-medium mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                        consectetur consequatur
+                        cumque. Natus quibusdam amet ab enim laudantium, quidem in nihil ullam voluptate nesciunt
+                        pariatur
+                        atque ratione ad et, molestiae accusamus velit laborum vitae architecto reiciendis est illum
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat corporis quibusdam corrupti
+                        animi sapiente dolore asperiores nihil praesentium temporibus iusto officia eum qui dolor, ea
+                        maxime distinctio magnam nesciunt. Libero.
+                </div>
+                <div class="col-md-4 img-container opacity">
+                    <img class="img-fluid rounded" src="assets/photos/zee.jpeg" alt="">
+                </div>
+            </div> -->
+            <div class="row g-5 text-white about py-5 align-items-center translate opacity" data-speed="-0.13" id="projects">
+                <h3 class="title text-center dm-sans-bold">My Projects</h3>
+                <div class="col-lg-3">
+                    <a href="programming.html">
+                            <button class="card-styling">
+                                <i class="fa-solid fa-code mb-4 project-icon"></i>
+                                <h5 class="text-center dm-sans-semibold">Programming</h5>
+                            </button>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="#">
+                        <button class="card-styling">
+                            <i class="fa-solid fa-palette mb-4 project-icon"></i>
+                            <h5 class="text-center dm-sans-semibold">Video Editing</h5>
+                        </button>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="#"></a>
+                    <button class="card-styling">
+                        <i class="fa-solid fa-music mb-4 project-icon"></i>
+                        <h5 class="text-center dm-sans-semibold">Music Producing</h5>
+                    </button>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="#">
+                        <button class="card-styling">
+                            <i class="fa fa-certificate mb-4 project-icon"></i>
+                            <h5 class="text-center dm-sans-semibold">My Certificates</h5>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="py-4">
+            <h5 class="text-center text-white">© Banyu Bagastara Nugroho</h5>
+        </footer>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
