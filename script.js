@@ -2,7 +2,8 @@ const translate = document.querySelectorAll(".translate");
 const big_title = document.querySelector(".big-title");
 const big_subtitle = document.querySelector(".big-subtitle");
 const header = document.querySelector("header");
-const shadow_transition = document.querySelector(".shadow-transition");
+const shadow_transition = document.querySelector(".shadow-transition");AOS.init();
+
 const section = document.querySelector("section");
 const opacity = document.querySelectorAll(".opacity")
 const border = document.querySelector(".border")
